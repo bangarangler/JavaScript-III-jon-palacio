@@ -176,18 +176,21 @@ console.log(swordsman.destroy()); // Sir Mustachio was removed from the game.
 // * Give the Hero and Villains different methods that could be used to remove health points from objects which could result in destruction if health gets to 0 or drops below 0;
 // * Create two new objects, one a villain and one a hero and fight it out with methods!
 
-//const knight = new Hero({
-//createdAt: new Date(),
-//dimensions: {
-//length: 4,
-//width: 2,
-//height: 3
-//},
-//healthPoints: 9,
-//name: "Arthur",
-//team: "The Goodest of Guys --- and Gals",
-//weapons: []
-//});
+const knight = new Hero({
+  createdAt: new Date(),
+  dimensions: {
+    length: 4,
+    width: 2,
+    height: 3
+  },
+  healthPoints: 9,
+  name: "Arthur",
+  team: "The Goodest of Guys --- and Gals",
+  weapons: ["Broad Sword"],
+  language: "Old English",
+  gesture: "Heroic wave",
+  legendaryStatus: "Revered"
+});
 
 const warlock = new Villan({
   createdAt: new Date(),
@@ -215,3 +218,13 @@ console.log(warlock.face);
 console.log(warlock.motion());
 console.log(warlock.reputation());
 console.log(warlock.catchPhrase());
+
+console.log(knight.createdAt);
+console.log(knight.dimensions);
+console.log(knight.healthPoints);
+console.log(knight.name);
+console.log(knight.team);
+console.log(knight.weapons);
+console.log(knight.gesture);
+console.log(knight.legendaryStatus);
+console.log(knight.charm());
